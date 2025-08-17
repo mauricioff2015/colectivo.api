@@ -13,7 +13,7 @@ services:
     networks:
       - backend
     environment:
-      ConnectionStrings__ColectivoDb=Server=172.18.0.2;Database=ColectivoDb;User Id=sa;Password=zrT15Itc21FsCv;TrustServerCertificate=True;Encrypt=False
+      ConnectionStrings__ColectivoDb: "Server=172.18.0.2;Database=ColectivoDb;User Id=sa;Password=zrT15Itc21FsCv;TrustServerCertificate=True;Encrypt=False"
 
 networks:
   backend:
