@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 const string CorsPolicy = "AllowFlutterWeb";
 builder.Services.AddCors(options =>
 {
@@ -40,5 +41,6 @@ app.UseCors(CorsPolicy);
 app.UseAuthorization();
 
 app.MapControllers();
+app.Urls.Add("http://0.0.0.0:80");
 
 app.Run();
